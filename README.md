@@ -1,28 +1,32 @@
 # Expense Tracker
 
-Minimal React + TypeScript expense tracker with Tailwind CSS and Recharts.
+A personal finance dashboard for tracking daily spending, visualizing trends, and staying on top of monthly budgets — built with React, TypeScript, and Tailwind CSS.
 
-Features:
-- Add / edit / delete expenses (category, amount, date, notes)
-- Dashboard with monthly spending line chart and category breakdown pie chart (Recharts)
-- Summary cards row: total this month, top category, average daily spend
-- Searchable/filterable transactions table
-- Dark mode toggle
-- Responsive layout with micro-animations
-- LocalStorage persistence with seeded sample data on first load
+🔗 **Live demo:** https://prathimasunkara.github.io
 
-Get started:
+## Overview
 
-1. Install dependencies
+Minimal, fast expense tracker that turns raw transaction data into clear visual insights — monthly spend trends, category breakdowns, and quick summary stats — without needing a backend or account setup.
 
-   npm install
+## Features
 
-2. Start dev server
+- **Add / edit / delete expenses** — capture category, amount, date, and notes
+- **Dashboard summary cards** — total spend this month, top category, average daily spend
+- **Monthly spending trend** — line chart tracking spend over time
+- **Category breakdown** — donut chart visualizing spend by category (Food, Rent, Utilities, Transport, Entertainment)
+- **Searchable & filterable transactions table** — filter by date range, search by amount/notes/category
+- **Dark mode toggle** — full responsive light/dark theme
+- **Persistent storage** — data saved locally via `localStorage`, seeded with sample data on first load
 
-   npm run dev
+## Tech Stack
 
-Notes:
-- Data is stored in localStorage under the `expenses_v1` key. Clear that key to reset sample data.
-- The UI uses Tailwind's `class` dark mode. Use the toggle in the header.
+- **Frontend:** React 18, TypeScript, Vite
+- **Styling:** Tailwind CSS
+- **Charts:** Recharts
+- **Utilities:** clsx, uuid
 
-License: MIT
+## Getting Started
+
+```bash
+npm install
+npm run dev
